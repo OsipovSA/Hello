@@ -19,12 +19,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-//    public void sayHello(View view) {
-//        Toast myToast = Toast.makeText(this,"Приветствую тебя!", Toast.LENGTH_SHORT);
-//        View myToastView = myToast.getView();
-//        myToastView.setBackgroundColor(Color.rgb(255,0,0));
-//        myToast.show();
-//    }
+    public void sayHello(View view) {
+        Toast myToast = Toast.makeText(this,"Приветствую тебя!", Toast.LENGTH_SHORT);
+        View myToastView = myToast.getView();
+        myToastView.setBackgroundColor(Color.rgb(255,0,0));
+        myToast.show();
+    }
 
     public void sendMessage(View view) {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
